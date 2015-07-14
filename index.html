@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Sampler Pad Tab Editor</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body id="home">
+
+	<h1>Sampler Pad Tab Editor</h1>
+	<div ng-app="myApp" ng-controller="myCtrl">
+
+	<h2>Generic 8x8 Pad Sampler</h2>
+
+		<table>
+				<td>8</td>
+				<td>
+					<input type="text" ng-model="a8">
+				</td>
+				<td>
+					<input type="text" ng-model="b8">
+				</td>
+				<td>
+					<input type="text" ng-model="c8">
+				</td>
+				<td>
+					<input type="text" ng-model="d8">
+				</td>
+				<td>
+					<input type="text" ng-model="e8">
+				</td>
+				<td>
+					<input type="text" ng-model="f8">
+				</td>
+				<td>
+					<input type="text" ng-model="g8">
+				</td>
+				<td>
+					<input type="text" ng-model="h8">
+				</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>
+					<input type="text" ng-model="a7">
+				</td>
+				<td>
+					<input type="text" ng-model="b7">
+				</td>
+				<td>
+					<input type="text" ng-model="c7">
+				</td>
+				<td>
+					<input type="text" ng-model="d7">
+				</td>
+				<td>
+					<input type="text" ng-model="e7">
+				</td>
+				<td>
+					<input type="text" ng-model="f7">
+				</td>
+				<td>
+					<input type="text" ng-model="g7">
+				</td>
+				<td>
+					<input type="text" ng-model="h7">
+				</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>
+					<input type="text" ng-model="a6">
+				</td>
+				<td>
+					<input type="text" ng-model="b6">
+				</td>
+				<td>
+					<input type="text" ng-model="c6">
+				</td>
+				<td>
+					<input type="text" ng-model="d6">
+				</td>
+				<td>
+					<input type="text" ng-model="e6">
+				</td>
+				<td>
+					<input type="text" ng-model="f6">
+				</td>
+				<td>
+					<input type="text" ng-model="g6">
+				</td>
+				<td>
+					<input type="text" ng-model="h6">
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>
+					<input type="text" ng-model="a5">
+				</td>
+				<td>
+					<input type="text" ng-model="b5">
+				</td>
+				<td>
+					<input type="text" ng-model="c5">
+				</td>
+				<td>
+					<input type="text" ng-model="d5">
+				</td>
+				<td>
+					<input type="text" ng-model="e5">
+				</td>
+				<td>
+					<input type="text" ng-model="f5">
+				</td>
+				<td>
+					<input type="text" ng-model="g5">
+				</td>
+				<td>
+					<input type="text" ng-model="h5">
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>
+					<input type="text" ng-model="a4">
+				</td>
+				<td>
+					<input type="text" ng-model="b4">
+				</td>
+				<td>
+					<input type="text" ng-model="c4">
+				</td>
+				<td>
+					<input type="text" ng-model="d4">
+				</td>
+				<td>
+					<input type="text" ng-model="e4">
+				</td>
+				<td>
+					<input type="text" ng-model="f4">
+				</td>
+				<td>
+					<input type="text" ng-model="g4">
+				</td>
+				<td>
+					<input type="text" ng-model="h4">
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>
+					<input type="text" ng-model="a3">
+				</td>
+				<td>
+					<input type="text" ng-model="b3">
+				</td>
+				<td>
+					<input type="text" ng-model="c3">
+				</td>
+				<td>
+					<input type="text" ng-model="d3">
+				</td>
+				<td>
+					<input type="text" ng-model="e3">
+				</td>
+				<td>
+					<input type="text" ng-model="f3">
+				</td>
+				<td>
+					<input type="text" ng-model="g3">
+				</td>
+				<td>
+					<input type="text" ng-model="h3">
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>
+					<input type="text" ng-model="a2">
+				</td>
+				<td>
+					<input type="text" ng-model="b2">
+				</td>
+				<td>
+					<input type="text" ng-model="c2">
+				</td>
+				<td>
+					<input type="text" ng-model="d2">
+				</td>
+				<td>
+					<input type="text" ng-model="e2">
+				</td>
+				<td>
+					<input type="text" ng-model="f2">
+				</td>
+				<td>
+					<input type="text" ng-model="g2">
+				</td>
+				<td>
+					<input type="text" ng-model="h2">
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>
+					<input type="text" ng-model="a1">
+				</td>
+				<td>
+					<input type="text" ng-model="b1">
+				</td>
+				<td>
+					<input type="text" ng-model="c1">
+				</td>
+				<td>
+					<input type="text" ng-model="d1">
+				</td>
+				<td>
+					<input type="text" ng-model="e1">
+				</td>
+				<td>
+					<input type="text" ng-model="f1">
+				</td>
+				<td>
+					<input type="text" ng-model="g1">
+				</td>
+				<td>
+					<input type="text" ng-model="h1">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>
+				<td>g</td>
+				<td>h</td>
+			</tr>
+		</table>
+
+		<h2>Tab Editor</h2>
+		<table>
+			<tr>
+				<td colspan="2">Right Hand</td>
+			</tr>
+			<tr>
+				<td>Right Ring:</td>
+				<td>
+					<input type="text" ng-model="rightRing">
+				</td>
+			</tr>
+			<tr>
+				<td>Right Middle:</td>
+				<td>
+					<input type="text" ng-model="rightMiddle">
+				</td>
+			</tr>
+			<tr>
+				<td>Right Index:</td>
+				<td>
+					<input type="text" ng-model="rightIndex">
+				</td>
+			</tr>
+			<tr>
+				<td>Right Thumb:</td>
+				<td>
+					<input type="text" ng-model="rightThumb">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">Left Hand</td>
+			</tr>
+			<tr>
+				<td>Left Thumb:</td>
+				<td>
+					<input type="text" ng-model="leftThumb">
+				</td>
+			</tr>
+			<tr>
+				<td>Left Index:</td>
+				<td>
+					<input type="text" ng-model="leftIndex">
+				</td>
+			</tr>
+			<tr>
+				<td>Left Middle:</td>
+				<td>
+					<input type="text" ng-model="leftMiddle">
+				</td>
+			</tr>
+			<tr>
+				<td>Left Ring:</td>
+				<td>
+					<input type="text" ng-model="leftRing">
+				</td>
+			</tr>
+		</table>
+
+		<h2>Tab Output</h2>
+		<table>
+			<tr>
+				<td colspan="1">Right Hand</td>
+			</tr>
+			<tr>
+				<td>RR: </td><td>|</td>
+				<td>
+					{{rightRing}}
+				</td>
+			</tr>
+			<tr>
+				<td>RM: </td><td>|</td>
+				<td>
+					{{rightMiddle}}
+				</td>
+			</tr>
+			<tr>
+				<td>RI: </td><td>|</td>
+				<td>
+					{{rightIndex}}
+				</td>
+			</tr>
+			<tr>
+				<td>RT: </td><td>|</td>
+				<td>
+					{{rightThumb}}
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1">Left Hand</td>
+			</tr>
+			<tr>
+				<td>LT: </td><td>|</td>
+				<td>
+					{{leftThumb}}
+				</td>
+			</tr>
+			<tr>
+				<td>LI: </td><td>|</td>
+				<td>
+					{{leftIndex}}
+				</td>
+			</tr>
+			<tr>
+				<td>LM: </td><td>|</td>
+				<td>
+					{{leftMiddle}}
+				</td>
+			</tr>
+			<tr>
+				<td>LR: </td><td>|</td>
+				<td>
+					{{leftRing}}
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('myCtrl', function($scope) {
+			$scope.rightRing = "-";
+			$scope.rightMiddle = "-";
+			$scope.rightIndex = "-";
+			$scope.rightThumb = "-";
+			$scope.leftRing = "-";
+			$scope.leftMiddle = "-";
+			$scope.leftIndex = "-";
+			$scope.leftThumb = "-";
+			$scope.a1 = "a1";
+			$scope.a2 = "a2";
+			$scope.a3 = "a3";
+			$scope.a4 = "a4";
+			$scope.a5 = "a5";
+			$scope.a6 = "a6";
+			$scope.a7 = "a7";
+			$scope.a8 = "a8";
+			$scope.b1 = "b1";
+			$scope.b2 = "b2";
+			$scope.b3 = "b3";
+			$scope.b4 = "b4";
+			$scope.b5 = "b5";
+			$scope.b6 = "b6";
+			$scope.b7 = "b7";
+			$scope.b8 = "b8";
+			$scope.c1 = "c1";
+			$scope.c2 = "c2";
+			$scope.c3 = "c3";
+			$scope.c4 = "c4";
+			$scope.c5 = "c5";
+			$scope.c6 = "c6";
+			$scope.c7 = "c7";
+			$scope.c8 = "c8";
+			$scope.d1 = "d1";
+			$scope.d2 = "d2";
+			$scope.d3 = "d3";
+			$scope.d4 = "d4";
+			$scope.d5 = "d5";
+			$scope.d6 = "d6";
+			$scope.d7 = "d7";
+			$scope.d8 = "d8";
+			$scope.e1 = "e1";
+			$scope.e2 = "e2";
+			$scope.e3 = "e3";
+			$scope.e4 = "e4";
+			$scope.e5 = "e5";
+			$scope.e6 = "e6";
+			$scope.e7 = "e7";
+			$scope.e8 = "e8";
+			$scope.f1 = "f1";
+			$scope.f2 = "f2";
+			$scope.f3 = "f3";
+			$scope.f4 = "f4";
+			$scope.f5 = "f5";
+			$scope.f6 = "f6";
+			$scope.f7 = "f7";
+			$scope.f8 = "f8";
+			$scope.g1 = "g1";
+			$scope.g2 = "g2";
+			$scope.g3 = "g3";
+			$scope.g4 = "g4";
+			$scope.g5 = "g5";
+			$scope.g6 = "g6";
+			$scope.g7 = "g7";
+			$scope.g8 = "g8";
+			$scope.h1 = "h1";
+			$scope.h2 = "h2";
+			$scope.h3 = "h3";
+			$scope.h4 = "h4";
+			$scope.h5 = "h5";
+			$scope.h6 = "h6";
+			$scope.h7 = "h7";
+			$scope.h8 = "h8";
+		});
+	</script>
+
+</html>
+
+</body>
+
+</html>
