@@ -4,19 +4,22 @@
 <head>
 	<meta charset="utf-8">
 	<title>Sampler Pad Tab Editor</title>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 
-<body id="home">
+<body id="home";>
 
-	<h1>Sampler Pad Tab Editor</h1>
+	<h1>TAB 4 PADS</h1>
 	<div ng-app="myApp" ng-controller="myCtrl">
 
-		<h2>Generic 8x8 Pad Sampler</h2>
+		<h2>SAMPLE MAP</h2>
 
 		<table>
 			<td>8</td>
@@ -247,7 +250,7 @@
 			</tr>
 		</table>
 
-		<h2>Tab Editor</h2>
+		<h2>FINGERS</h2>
 		<table>
 			<tr>
 				<td colspan="1">Right Hand</td>
@@ -305,73 +308,78 @@
 			</tr>
 		</table>
 
-		<h2>Tab Output</h2>
-		<table>
-			<tr>
-				<td colspan="1">Right Hand</td>
-			</tr>
-			<tr>
-				<td>RR: </td>
-				<td>|</td>
-				<td>
-					{{rightRing}}
-				</td>
-			</tr>
-			<tr>
-				<td>RM: </td>
-				<td>|</td>
-				<td>
-					{{rightMiddle}}
-				</td>
-			</tr>
-			<tr>
-				<td>RI: </td>
-				<td>|</td>
-				<td>
-					{{rightIndex}}
-				</td>
-			</tr>
-			<tr>
-				<td>RT: </td>
-				<td>|</td>
-				<td>
-					{{rightThumb}}
-				</td>
-			</tr>
-			<tr>
-				<td colspan="1">Left Hand</td>
-			</tr>
-			<tr>
-				<td>LT: </td>
-				<td>|</td>
-				<td>
-					{{leftThumb}}
-				</td>
-			</tr>
-			<tr>
-				<td>LI: </td>
-				<td>|</td>
-				<td>
-					{{leftIndex}}
-				</td>
-			</tr>
-			<tr>
-				<td>LM: </td>
-				<td>|</td>
-				<td>
-					{{leftMiddle}}
-				</td>
-			</tr>
-			<tr>
-				<td>LR: </td>
-				<td>|</td>
-				<td>
-					{{leftRing}}
-				</td>
-			</tr>
-		</table>
+		<h2>TAB:</h2>
+		<code>
+			<table style="text-align:left; align-items: center; height: 10px;">
+				<tr style="height: 10px;">
+					<td colspan="1">Right Hand</td>
+				</tr>
+				<tr>
+					<td style="height: 10px;">RR: </td>
+					<td style="height: 10px;">|</td>
+					<td style="height: 10px;">
+						{{rightRing}}
+					</td>
+				</tr>
+				<tr style="height: 10px;">
+					<td style="height: 10px;">RM: </td>
+					<td style="height: 10px;">|</td>
+					<td style="height: 10px;">
+						{{rightMiddle}}
+					</td>
+				</tr>
+				<tr style="height: 10px;">
+					<td style="height: 10px; /*this is so dumb but I don't know how else to do it">RI: </td>
+					<td style="height: 10px;">|</td>
+					<td style="height: 10px;">
+						{{rightIndex}}
+					</td>
+				</tr>
+				<tr style="height: 10px;">
+					<td style="height: 10px;">RT: </td>
+					<td style="height: 10px;">|</td>
+					<td style="height: 10px;">
+						{{rightThumb}}
+					</td>
+				</tr>
+				<tr style="height: 10px;">
+					<td colspan="1">Left Hand</td>
+				</tr>
+				<tr style="height: 10px;">
+					<td style="height: 10px;">LT: </td>
+					<td style="height: 10px;">|</td>
+					<td style="height: 10px;">
+						{{leftThumb}}
+					</td>
+				</tr>
+				<tr style="height: 10px;">
+					<td style="height: 10px;">LI: </td>
+					<td style="height: 10px;">|</td>
+					<td style="height: 10px;">
+						{{leftIndex}}
+					</td>
+				</tr>
+				<tr style="height: 10px;">
+					<td style="height: 10px;">LM: </td>
+					<td style="height: 10px;">|</td>
+					<td style="height: 10px;">
+						{{leftMiddle}}
+					</td>
+				</tr>
+				<tr style="height: 10px;">
+					<td style="height: 10px;">LR: </td>
+					<td style="height: 10px;">|</td>
+					<td style="height: 10px;">
+						{{leftRing}}
+					</td>
+				</tr>
+			</table>
+			</left-align>
+		</code>
 
 	</div>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
 
 	<script>
 		var app = angular.module('myApp', []);
