@@ -250,7 +250,7 @@
 			</tr>
 		</table>
 
-		<h2>FINGERS</h2>
+		<!-- <h2>FINGERS</h2>
 		<table>
 			<tr>
 				<td colspan="1">Right Hand</td>
@@ -306,9 +306,9 @@
 					<input type="text" ng-model="leftRing">
 				</td>
 			</tr>
-		</table>
+		</table> -->
 
-		<h2>TAB:</h2>
+		<h2>TAB</h2>
 		<code>
 			<table style="text-align:left; align-items: center; height: 10px;">
 				<tr style="height: 10px;">
@@ -392,6 +392,7 @@
 			$scope.leftMiddle = "-";
 			$scope.leftIndex = "-";
 			$scope.leftThumb = "-";
+
 			$scope.a1 = "a1";
 			$scope.a2 = "a2";
 			$scope.a3 = "a3";
@@ -400,6 +401,9 @@
 			$scope.a6 = "a6";
 			$scope.a7 = "a7";
 			$scope.a8 = "a8";
+
+			$scope.a = [$scope.a1, $scope.a2, $scope.a3, $scope.a4, $scope.a5, $scope.a6, $scope.a7, $scope.a8];
+
 			$scope.b1 = "b1";
 			$scope.b2 = "b2";
 			$scope.b3 = "b3";
@@ -408,6 +412,9 @@
 			$scope.b6 = "b6";
 			$scope.b7 = "b7";
 			$scope.b8 = "b8";
+
+			$scope.b = [$scope.b1, $scope.b2, $scope.b3, $scope.b4, $scope.b5, $scope.b6, $scope.b7, $scope.b8];
+
 			$scope.c1 = "c1";
 			$scope.c2 = "c2";
 			$scope.c3 = "c3";
@@ -416,6 +423,9 @@
 			$scope.c6 = "c6";
 			$scope.c7 = "c7";
 			$scope.c8 = "c8";
+
+			$scope.c = [$scope.c1, $scope.c2, $scope.c3, $scope.c4, $scope.c5, $scope.c6, $scope.c7, $scope.c8];
+
 			$scope.d1 = "d1";
 			$scope.d2 = "d2";
 			$scope.d3 = "d3";
@@ -424,6 +434,9 @@
 			$scope.d6 = "d6";
 			$scope.d7 = "d7";
 			$scope.d8 = "d8";
+
+			$scope.d = [$scope.d1, $scope.d2, $scope.d3, $scope.d4, $scope.d5, $scope.d6, $scope.d7, $scope.d8];
+
 			$scope.e1 = "e1";
 			$scope.e2 = "e2";
 			$scope.e3 = "e3";
@@ -432,6 +445,9 @@
 			$scope.e6 = "e6";
 			$scope.e7 = "e7";
 			$scope.e8 = "e8";
+
+			$scope.e = [$scope.e1, $scope.e2, $scope.e3, $scope.e4, $scope.e5, $scope.e6, $scope.e7, $scope.e8];
+
 			$scope.f1 = "f1";
 			$scope.f2 = "f2";
 			$scope.f3 = "f3";
@@ -440,6 +456,9 @@
 			$scope.f6 = "f6";
 			$scope.f7 = "f7";
 			$scope.f8 = "f8";
+
+			$scope.f = [$scope.f1, $scope.f2, $scope.f3, $scope.f4, $scope.f5, $scope.f6, $scope.f7, $scope.f8];
+
 			$scope.g1 = "g1";
 			$scope.g2 = "g2";
 			$scope.g3 = "g3";
@@ -448,6 +467,9 @@
 			$scope.g6 = "g6";
 			$scope.g7 = "g7";
 			$scope.g8 = "g8";
+
+			$scope.g = [$scope.g1, $scope.g2, $scope.g3, $scope.g4, $scope.g5, $scope.g6, $scope.g7, $scope.g8];
+
 			$scope.h1 = "h1";
 			$scope.h2 = "h2";
 			$scope.h3 = "h3";
@@ -456,6 +478,28 @@
 			$scope.h6 = "h6";
 			$scope.h7 = "h7";
 			$scope.h8 = "h8";
+
+			$scope.h = [$scope.h1, $scope.h2, $scope.h3, $scope.h4, $scope.h5, $scope.h6, $scope.h7, $scope.h8];
+
+			$scope.sampler = [
+				$scope.a1, $scope.a2, $scope.a3, $scope.a4, $scope.a5, $scope.a6, $scope.a7, $scope.a8,
+				$scope.b1, $scope.b2, $scope.b3, $scope.b4, $scope.b5, $scope.b6, $scope.b7, $scope.b8,
+				$scope.c1, $scope.c2, $scope.c3, $scope.c4, $scope.c5, $scope.c6, $scope.c7, $scope.c8,
+				$scope.d1, $scope.d2, $scope.d3, $scope.d4, $scope.d5, $scope.d6, $scope.d7, $scope.d8,
+				$scope.e1, $scope.e2, $scope.e3, $scope.e4, $scope.e5, $scope.e6, $scope.e7, $scope.e8,
+				$scope.f1, $scope.f2, $scope.f3, $scope.f4, $scope.f5, $scope.f6, $scope.f7, $scope.f8,
+				$scope.g1, $scope.g2, $scope.g3, $scope.g4, $scope.g5, $scope.g6, $scope.g7, $scope.g8,
+				$scope.h1, $scope.h2, $scope.h3, $scope.h4, $scope.h5, $scope.h6, $scope.h7, $scope.h8
+			];
+
+			$scope.LR = ""
+			$scope.LM = ""
+			$scope.LI = ""
+			$scope.LT = ""
+			$scope.RR = ""
+			$scope.RM = ""
+			$scope.RI = ""
+			$scope.RT = ""
 		});
 	</script>
 
