@@ -21,7 +21,7 @@
 
 	<h1>TAB 4 PADS</h1>
 	<div ng-app="myApp" ng-controller="myCtrl" id="container" style="width:100%;">
-		<div id="left-upper" style="float:left; width:50%;">
+		<div id="left-upper" style="float:left; width:33%;">
 			<h2>SAMPLE MAP</h2>
 
 			<table>
@@ -252,7 +252,7 @@
 				<td>h</td>
 			</tr> -->
 			</table>
-			<div id="left-lower" style="float:left; width:50%;">
+			<div id="left-lower" style="float:left; width:33%;">
 				<h2>TAB</h2>
 				<code>
 					<table style="text-align:left; align-items: center; height: 10px;">
@@ -324,7 +324,7 @@
 			</div>
 		</div>
 
-		<div id="right" style="float:right; width:50%;">
+		<div id="right" style="float:right; width:66%;">
 
 			<h2>FINGERS</h2>
 
@@ -342,35 +342,37 @@
 				</tr>
 				<tr>
 					<td>
-						<input type="text" ng-model="leftRing">
+						<input type="text" ng-model="leftRing" maxlength="3">
 					</td>
 					<td>
-						<input type="text" ng-model="leftMiddle">
+						<input type="text" ng-model="leftMiddle" maxlength="3">
 					</td>
 					<td>
-						<input type="text" ng-model="leftIndex">
+						<input type="text" ng-model="leftIndex" maxlength="3">
 					</td>
 					<td>
-						<input type="text" ng-model="leftThumb">
+						<input type="text" ng-model="leftThumb" maxlength="3">
 					</td>
 					<td></td>
 					<td>
-						<input type="text" ng-model="rightThumb">
+						<input type="text" ng-model="rightThumb" maxlength="3">
 					</td>
 					<td>
-						<input type="text" ng-model="rightIndex">
+						<input type="text" ng-model="rightIndex" maxlength="3">
 					</td>
 					<td>
-						<input type="text" ng-model="rightMiddle">
+						<input type="text" ng-model="rightMiddle" maxlength="3">
 					</td>
 					<td>
-						<input type="text" ng-model="rightRing">
+						<input type="text" ng-model="rightRing" maxlength="3">
 					</td>
 				</tr>
+				<td colspan="9">
+					<button ng-click="concatStrings()"> COMMIT
+					</button>
+				</td>
 			</table>
-				<button ng-click="concatStrings()">
-					<h2> COMMIT </h2>
-				</button>
+
 
 		</div>
 	</div>
@@ -518,7 +520,7 @@
 			$scope.RI = "";
 			$scope.RT = "";
 
-			$scope.concatStrings = function($event){
+			$scope.concatStrings = function($event) {
 
 				$scope.rightRingTab = $scope.combine_and_adjust($scope.rightRingTab, $scope.rightRing);
 				$scope.rightMiddleTab = $scope.combine_and_adjust($scope.rightMiddleTab, $scope.rightMiddle);
@@ -540,10 +542,10 @@
 				$scope.leftThumb = "-";
 			}
 
-			$scope.combine_and_adjust = function(tabString, newString){
+			$scope.combine_and_adjust = function(tabString, newString) {
 				tabString = tabString + newString;
 				var extraDashes = 4 - newString.length;
-				while ( extraDashes > 0 ) {
+				while (extraDashes > 0) {
 					extraDashes--;
 					tabString = tabString + '-'
 				}
@@ -551,9 +553,6 @@
 			}
 
 		});
-
-
-
 	</script>
 
 </html>
