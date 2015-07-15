@@ -12,232 +12,235 @@
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+	<!-- Yeh, probably best not to read beyond here... I am writing this in javascript and angularjs *i think* i don't really know what I am doing, is my first time so be gentle ;-P. making large tables is probably easier, I made it in js cause it i wanted to host here -->
+
 </head>
 
-<body id="home";>
+<body id="home" ;>
 
 	<h1>TAB 4 PADS</h1>
-	<div ng-app="myApp" ng-controller="myCtrl">
+	<div ng-app="myApp" ng-controller="myCtrl" id="container" style="width:100%;">
+		<div id="left-upper" style="float:left; width:50%;">
+			<h2>SAMPLE MAP</h2>
 
-		<h2>SAMPLE MAP</h2>
-
-		<table>
-			<!-- <td>8</td> -->
-			<td>
-				<input type="text" ng-model="a8">
-			</td>
-			<td>
-				<input type="text" ng-model="b8">
-			</td>
-			<td>
-				<input type="text" ng-model="c8">
-			</td>
-			<td>
-				<input type="text" ng-model="d8">
-			</td>
-			<td>
-				<input type="text" ng-model="e8">
-			</td>
-			<td>
-				<input type="text" ng-model="f8">
-			</td>
-			<td>
-				<input type="text" ng-model="g8">
-			</td>
-			<td>
-				<input type="text" ng-model="h8">
-			</td>
-			</tr>
-			<tr>
-				<!-- <td>7</td> -->
+			<table>
+				<!-- <td>8</td> -->
 				<td>
-					<input type="text" ng-model="a7">
+					<input type="text" ng-model="a8" maxlength="3">
 				</td>
 				<td>
-					<input type="text" ng-model="b7">
+					<input type="text" ng-model="b8" maxlength="3">
 				</td>
 				<td>
-					<input type="text" ng-model="c7">
+					<input type="text" ng-model="c8" maxlength="3">
 				</td>
 				<td>
-					<input type="text" ng-model="d7">
+					<input type="text" ng-model="d8" maxlength="3">
 				</td>
 				<td>
-					<input type="text" ng-model="e7">
+					<input type="text" ng-model="e8" maxlength="3">
 				</td>
 				<td>
-					<input type="text" ng-model="f7">
+					<input type="text" ng-model="f8" maxlength="3">
 				</td>
 				<td>
-					<input type="text" ng-model="g7">
+					<input type="text" ng-model="g8" maxlength="3">
 				</td>
 				<td>
-					<input type="text" ng-model="h7">
+					<input type="text" ng-model="h8" maxlength="3">
 				</td>
-			</tr>
-			<tr>
-				<!-- <td>6</td> -->
-				<td>
-					<input type="text" ng-model="a6">
-				</td>
-				<td>
-					<input type="text" ng-model="b6">
-				</td>
-				<td>
-					<input type="text" ng-model="c6">
-				</td>
-				<td>
-					<input type="text" ng-model="d6">
-				</td>
-				<td>
-					<input type="text" ng-model="e6">
-				</td>
-				<td>
-					<input type="text" ng-model="f6">
-				</td>
-				<td>
-					<input type="text" ng-model="g6">
-				</td>
-				<td>
-					<input type="text" ng-model="h6">
-				</td>
-			</tr>
-			<tr>
-				<!-- <td>5</td> -->
-				<td>
-					<input type="text" ng-model="a5">
-				</td>
-				<td>
-					<input type="text" ng-model="b5">
-				</td>
-				<td>
-					<input type="text" ng-model="c5">
-				</td>
-				<td>
-					<input type="text" ng-model="d5">
-				</td>
-				<td>
-					<input type="text" ng-model="e5">
-				</td>
-				<td>
-					<input type="text" ng-model="f5">
-				</td>
-				<td>
-					<input type="text" ng-model="g5">
-				</td>
-				<td>
-					<input type="text" ng-model="h5">
-				</td>
-			</tr>
-			<tr>
-				<!-- <td>4</td> -->
-				<td>
-					<input type="text" ng-model="a4">
-				</td>
-				<td>
-					<input type="text" ng-model="b4">
-				</td>
-				<td>
-					<input type="text" ng-model="c4">
-				</td>
-				<td>
-					<input type="text" ng-model="d4">
-				</td>
-				<td>
-					<input type="text" ng-model="e4">
-				</td>
-				<td>
-					<input type="text" ng-model="f4">
-				</td>
-				<td>
-					<input type="text" ng-model="g4">
-				</td>
-				<td>
-					<input type="text" ng-model="h4">
-				</td>
-			</tr>
-			<tr>
-				<!-- <td>3</td> -->
-				<td>
-					<input type="text" ng-model="a3">
-				</td>
-				<td>
-					<input type="text" ng-model="b3">
-				</td>
-				<td>
-					<input type="text" ng-model="c3">
-				</td>
-				<td>
-					<input type="text" ng-model="d3">
-				</td>
-				<td>
-					<input type="text" ng-model="e3">
-				</td>
-				<td>
-					<input type="text" ng-model="f3">
-				</td>
-				<td>
-					<input type="text" ng-model="g3">
-				</td>
-				<td>
-					<input type="text" ng-model="h3">
-				</td>
-			</tr>
-			<tr>
-				<!-- <td>2</td> -->
-				<td>
-					<input type="text" ng-model="a2">
-				</td>
-				<td>
-					<input type="text" ng-model="b2">
-				</td>
-				<td>
-					<input type="text" ng-model="c2">
-				</td>
-				<td>
-					<input type="text" ng-model="d2">
-				</td>
-				<td>
-					<input type="text" ng-model="e2">
-				</td>
-				<td>
-					<input type="text" ng-model="f2">
-				</td>
-				<td>
-					<input type="text" ng-model="g2">
-				</td>
-				<td>
-					<input type="text" ng-model="h2">
-				</td>
-			</tr>
-			<tr>
-				<!-- <td>1</td> -->
-				<td>
-					<input type="text" ng-model="a1">
-				</td>
-				<td>
-					<input type="text" ng-model="b1">
-				</td>
-				<td>
-					<input type="text" ng-model="c1">
-				</td>
-				<td>
-					<input type="text" ng-model="d1">
-				</td>
-				<td>
-					<input type="text" ng-model="e1">
-				</td>
-				<td>
-					<input type="text" ng-model="f1">
-				</td>
-				<td>
-					<input type="text" ng-model="g1">
-				</td>
-				<td>
-					<input type="text" ng-model="h1">
-				</td>
-			</tr>
-			<!-- <tr>
+				</tr>
+				<tr>
+					<!-- <td>7</td> -->
+					<td>
+						<input type="text" ng-model="a7" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="b7" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="c7" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="d7" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="e7" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="f7" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="g7" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="h7" maxlength="3">
+					</td>
+				</tr>
+				<tr>
+					<!-- <td>6</td> -->
+					<td>
+						<input type="text" ng-model="a6" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="b6" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="c6" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="d6" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="e6" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="f6" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="g6" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="h6" maxlength="3">
+					</td>
+				</tr>
+				<tr>
+					<!-- <td>5</td> -->
+					<td>
+						<input type="text" ng-model="a5" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="b5" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="c5" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="d5" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="e5" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="f5" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="g5" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="h5" maxlength="3">
+					</td>
+				</tr>
+				<tr>
+					<!-- <td>4</td> -->
+					<td>
+						<input type="text" ng-model="a4" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="b4" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="c4" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="d4" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="e4" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="f4" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="g4" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="h4" maxlength="3">
+					</td>
+				</tr>
+				<tr>
+					<!-- <td>3</td> -->
+					<td>
+						<input type="text" ng-model="a3" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="b3" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="c3" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="d3" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="e3" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="f3" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="g3" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="h3" maxlength="3">
+					</td>
+				</tr>
+				<tr>
+					<!-- <td>2</td> -->
+					<td>
+						<input type="text" ng-model="a2" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="b2" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="c2" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="d2" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="e2" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="f2" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="g2" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="h2" maxlength="3">
+					</td>
+				</tr>
+				<tr>
+					<!-- <td>1</td> -->
+					<td>
+						<input type="text" ng-model="a1" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="b1" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="c1" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="d1" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="e1" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="f1" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="g1" maxlength="3">
+					</td>
+					<td>
+						<input type="text" ng-model="h1" maxlength="3">
+					</td>
+				</tr>
+				<!-- <tr>
 				<td></td>
 				<td>a</td>
 				<td>b</td>
@@ -248,141 +251,135 @@
 				<td>g</td>
 				<td>h</td>
 			</tr> -->
-		</table>
+			</table>
+			<div id="left-lower" style="float:left; width:50%;">
+				<h2>TAB</h2>
+				<code>
+					<table style="text-align:left; align-items: center; height: 10px;">
+						<tr style="height: 10px;">
+							<td colspan="1">Right Hand</td>
+						</tr>
+						<tr>
+							<td style="height: 10px;">RR: </td>
+							<td style="height: 10px;">|</td>
+							<td style="width: 500px; height: 10px;">
+								{{rightRingTab}}
+							</td>
+						</tr>
+						<tr style="height: 10px;">
+							<td style="height: 10px;">RM: </td>
+							<td style="height: 10px;">|</td>
+							<td style="width: 500px; height: 10px;">
+								{{rightMiddleTab}}
+							</td>
+						</tr>
+						<tr style="height: 10px;">
+							<td style="height: 10px; /*this is so dumb but I don't know how else to do it*/">RI: </td>
+							<td style="height: 10px;">|</td>
+							<td style="width: 500px; height: 10px;">
+								{{rightIndexTab}}
+							</td>
+						</tr>
+						<tr style="height: 10px;">
+							<td style="height: 10px;">RT: </td>
+							<td style="height: 10px;">|</td>
+							<td style="width: 500px; height: 10px;">
+								{{rightThumbTab}}
+							</td>
+						</tr>
+						<tr style="height: 10px;">
+							<td colspan="1">Left Hand</td>
+						</tr>
+						<tr style="height: 10px;">
+							<td style="height: 10px;">LT: </td>
+							<td style="height: 10px;">|</td>
+							<td style="width: 500px; height: 10px;">
+								{{leftThumbTab}}
+							</td>
+						</tr>
+						<tr style="height: 10px;">
+							<td style="height: 10px;">LI: </td>
+							<td style="height: 10px;">|</td>
+							<td style="width: 500px; height: 10px;">
+								{{leftIndexTab}}
+							</td>
+						</tr>
+						<tr style="height: 10px;">
+							<td style="height: 10px;">LM: </td>
+							<td style="height: 10px;">|</td>
+							<td style="width: 500px; height: 10px;">
+								{{leftMiddleTab}}
+							</td>
+						</tr>
+						<tr style="height: 10px;">
+							<td style="height: 10px;">LR: </td>
+							<td style="height: 10px;">|</td>
+							<td style="width: 500px; height: 10px;">
+								{{leftRingTab}}
+							</td>
+						</tr>
+					</table>
+					</left-align>
+				</code>
+			</div>
+		</div>
 
-		<!-- <h2>FINGERS</h2>
-		<table>
-			<tr>
-				<td colspan="1">Right Hand</td>
-			</tr>
-			<tr>
-				<td>RR:</td>
-				<td>
-					<input type="text" ng-model="rightRing">
-				</td>
-			</tr>
-			<tr>
-				<td>RM:</td>
-				<td>
-					<input type="text" ng-model="rightMiddle">
-				</td>
-			</tr>
-			<tr>
-				<td>RI:</td>
-				<td>
-					<input type="text" ng-model="rightIndex">
-				</td>
-			</tr>
-			<tr>
-				<td>RT:</td>
-				<td>
-					<input type="text" ng-model="rightThumb">
-				</td>
-			</tr>
-			<tr>
-				<td colspan="1">Left Hand</td>
-			</tr>
-			<tr>
-				<td>LT:</td>
-				<td>
-					<input type="text" ng-model="leftThumb">
-				</td>
-			</tr>
-			<tr>
-				<td>LI:</td>
-				<td>
-					<input type="text" ng-model="leftIndex">
-				</td>
-			</tr>
-			<tr>
-				<td>LM:</td>
-				<td>
-					<input type="text" ng-model="leftMiddle">
-				</td>
-			</tr>
-			<tr>
-				<td>LR:</td>
-				<td>
-					<input type="text" ng-model="leftRing">
-				</td>
-			</tr>
-		</table> -->
+		<div id="right" style="float:right; width:50%;">
 
-		<h2>TAB</h2>
-		<code>
-			<table style="text-align:left; align-items: center; height: 10px;">
-				<tr style="height: 10px;">
-					<td colspan="1">Right Hand</td>
+			<h2>FINGERS</h2>
+
+			<table>
+				<tr>
+					<th style="font-family: 'Press Start 2P', cursive;">LR</th>
+					<th style="font-family: 'Press Start 2P', cursive;">LM</th>
+					<th style="font-family: 'Press Start 2P', cursive;">LI</th>
+					<th style="font-family: 'Press Start 2P', cursive;">LT</th>
+					<th style="font-family: 'Press Start 2P', cursive;"></th>
+					<th style="font-family: 'Press Start 2P', cursive;">RT</th>
+					<th style="font-family: 'Press Start 2P', cursive;">RI</th>
+					<th style="font-family: 'Press Start 2P', cursive;">RM</th>
+					<th style="font-family: 'Press Start 2P', cursive;">RR</th>
 				</tr>
 				<tr>
-					<td style="height: 10px;">RR: </td>
-					<td style="height: 10px;">|</td>
-					<td style="width: 500px; height: 10px;">
-						{{rightRing}}
+					<td>
+						<input type="text" ng-model="leftRing">
 					</td>
-				</tr>
-				<tr style="height: 10px;">
-					<td style="height: 10px;">RM: </td>
-					<td style="height: 10px;">|</td>
-						<td style="width: 500px; height: 10px;">
-						{{rightMiddle}}
+					<td>
+						<input type="text" ng-model="leftMiddle">
 					</td>
-				</tr>
-				<tr style="height: 10px;">
-					<td style="height: 10px; /*this is so dumb but I don't know how else to do it*/">RI: </td>
-					<td style="height: 10px;">|</td>
-						<td style="width: 500px; height: 10px;">
-						{{rightIndex}}
+					<td>
+						<input type="text" ng-model="leftIndex">
 					</td>
-				</tr>
-				<tr style="height: 10px;">
-					<td style="height: 10px;">RT: </td>
-					<td style="height: 10px;">|</td>
-						<td style="width: 500px; height: 10px;">
-						{{rightThumb}}
+					<td>
+						<input type="text" ng-model="leftThumb">
 					</td>
-				</tr>
-				<tr style="height: 10px;">
-					<td colspan="1">Left Hand</td>
-				</tr>
-				<tr style="height: 10px;">
-					<td style="height: 10px;">LT: </td>
-					<td style="height: 10px;">|</td>
-						<td style="width: 500px; height: 10px;">
-						{{leftThumb}}
+					<td></td>
+					<td>
+						<input type="text" ng-model="rightThumb">
 					</td>
-				</tr>
-				<tr style="height: 10px;">
-					<td style="height: 10px;">LI: </td>
-					<td style="height: 10px;">|</td>
-						<td style="width: 500px; height: 10px;">
-						{{leftIndex}}
+					<td>
+						<input type="text" ng-model="rightIndex">
 					</td>
-				</tr>
-				<tr style="height: 10px;">
-					<td style="height: 10px;">LM: </td>
-					<td style="height: 10px;">|</td>
-						<td style="width: 500px; height: 10px;">
-						{{leftMiddle}}
+					<td>
+						<input type="text" ng-model="rightMiddle">
 					</td>
-				</tr>
-				<tr style="height: 10px;">
-					<td style="height: 10px;">LR: </td>
-					<td style="height: 10px;">|</td>
-						<td style="width: 500px; height: 10px;">
-						{{leftRing}}
+					<td>
+						<input type="text" ng-model="rightRing">
 					</td>
 				</tr>
 			</table>
-			</left-align>
-		</code>
+				<button ng-click="concatStrings()">
+					<h2> COMMIT </h2>
+				</button>
 
+		</div>
 	</div>
 
 
 
 	<script>
 		var app = angular.module('myApp', []);
+
 		app.controller('myCtrl', function($scope) {
 			$scope.rightRing = "-";
 			$scope.rightMiddle = "-";
@@ -392,6 +389,26 @@
 			$scope.leftMiddle = "-";
 			$scope.leftIndex = "-";
 			$scope.leftThumb = "-";
+
+			$scope.fingers = [
+				$scope.rightRing,
+				$scope.rightMiddle,
+				$scope.rightIndex,
+				$scope.rightThumb,
+				$scope.leftRing,
+				$scope.leftMiddle,
+				$scope.leftIndex,
+				$scope.leftThumb,
+			];
+
+			$scope.rightRingTab = "-";
+			$scope.rightMiddleTab = "-";
+			$scope.rightIndexTab = "-";
+			$scope.rightThumbTab = "-";
+			$scope.leftRingTab = "-";
+			$scope.leftMiddleTab = "-";
+			$scope.leftIndexTab = "-";
+			$scope.leftThumbTab = "-";
 
 			$scope.a1 = "a1";
 			$scope.a2 = "a2";
@@ -492,15 +509,51 @@
 				$scope.h1, $scope.h2, $scope.h3, $scope.h4, $scope.h5, $scope.h6, $scope.h7, $scope.h8
 			];
 
-			$scope.LR = ""
-			$scope.LM = ""
-			$scope.LI = ""
-			$scope.LT = ""
-			$scope.RR = ""
-			$scope.RM = ""
-			$scope.RI = ""
-			$scope.RT = ""
+			$scope.LR = "";
+			$scope.LM = "";
+			$scope.LI = "";
+			$scope.LT = "";
+			$scope.RR = "";
+			$scope.RM = "";
+			$scope.RI = "";
+			$scope.RT = "";
+
+			$scope.concatStrings = function($event){
+
+				$scope.rightRingTab = $scope.combine_and_adjust($scope.rightRingTab, $scope.rightRing);
+				$scope.rightMiddleTab = $scope.combine_and_adjust($scope.rightMiddleTab, $scope.rightMiddle);
+				$scope.rightIndexTab = $scope.combine_and_adjust($scope.rightIndexTab, $scope.rightIndex);
+				$scope.rightThumbTab = $scope.combine_and_adjust($scope.rightThumbTab, $scope.rightThumb);
+				$scope.leftRingTab = $scope.combine_and_adjust($scope.leftRingTab, $scope.leftRing);
+				$scope.leftMiddleTab = $scope.combine_and_adjust($scope.leftMiddleTab, $scope.leftMiddle);
+				$scope.leftIndexTab = $scope.combine_and_adjust($scope.leftIndexTab, $scope.leftIndex);
+				$scope.leftThumbTab = $scope.combine_and_adjust($scope.leftThumbTab, $scope.leftThumb);
+
+
+				$scope.rightRing = "-";
+				$scope.rightMiddle = "-";
+				$scope.rightIndex = "-";
+				$scope.rightThumb = "-";
+				$scope.leftRing = "-";
+				$scope.leftMiddle = "-";
+				$scope.leftIndex = "-";
+				$scope.leftThumb = "-";
+			}
+
+			$scope.combine_and_adjust = function(tabString, newString){
+				tabString = tabString + newString;
+				var extraDashes = 4 - newString.length;
+				while ( extraDashes > 0 ) {
+					extraDashes--;
+					tabString = tabString + '-'
+				}
+				return tabString
+			}
+
 		});
+
+
+
 	</script>
 
 </html>
