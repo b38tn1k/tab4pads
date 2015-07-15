@@ -342,29 +342,29 @@
 				</tr>
 				<tr>
 					<td>
-						<input type="text" ng-model="leftRing" maxlength="3">
+						<select ng-model='leftRing'  ng-options='gridName for gridName in sampler'></select>
 					</td>
 					<td>
-						<input type="text" ng-model="leftMiddle" maxlength="3">
+						<select ng-model="leftMiddle"  ng-options='gridName for gridName in sampler'></select>
 					</td>
 					<td>
-						<input type="text" ng-model="leftIndex" maxlength="3">
+						<select ng-model="leftIndex"  ng-options='gridName for gridName in sampler'></select>
 					</td>
 					<td>
-						<input type="text" ng-model="leftThumb" maxlength="3">
+						<select ng-model="leftThumb"  ng-options='gridName for gridName in sampler'></select>
 					</td>
 					<td></td>
 					<td>
-						<input type="text" ng-model="rightThumb" maxlength="3">
+						<select ng-model="rightThumb"  ng-options='gridName for gridName in sampler'></select>
 					</td>
 					<td>
-						<input type="text" ng-model="rightIndex" maxlength="3">
+						<select ng-model="rightIndex"  ng-options='gridName for gridName in sampler'></select>
 					</td>
 					<td>
-						<input type="text" ng-model="rightMiddle" maxlength="3">
+						<select ng-model="rightMiddle"  ng-options='gridName for gridName in sampler'></select>
 					</td>
 					<td>
-						<input type="text" ng-model="rightRing" maxlength="3">
+						<select ng-model="rightRing"  ng-options='gridName for gridName in sampler'></select>
 					</td>
 				</tr>
 				<td colspan="9">
@@ -372,6 +372,7 @@
 					</button>
 				</td>
 			</table>
+
 
 
 		</div>
@@ -501,7 +502,7 @@
 			$scope.h = [$scope.h1, $scope.h2, $scope.h3, $scope.h4, $scope.h5, $scope.h6, $scope.h7, $scope.h8];
 
 			$scope.sampler = [
-				$scope.a1, $scope.a2, $scope.a3, $scope.a4, $scope.a5, $scope.a6, $scope.a7, $scope.a8,
+				"|", "+", "*", "<", ">", "/", "\\", $scope.a1, $scope.a2, $scope.a3, $scope.a4, $scope.a5, $scope.a6, $scope.a7, $scope.a8,
 				$scope.b1, $scope.b2, $scope.b3, $scope.b4, $scope.b5, $scope.b6, $scope.b7, $scope.b8,
 				$scope.c1, $scope.c2, $scope.c3, $scope.c4, $scope.c5, $scope.c6, $scope.c7, $scope.c8,
 				$scope.d1, $scope.d2, $scope.d3, $scope.d4, $scope.d5, $scope.d6, $scope.d7, $scope.d8,
