@@ -327,54 +327,55 @@
 		<div id="right" style="float:right; width:66%;">
 
 			<h2>FINGERS</h2>
+			<div class="styled-select">
+				<table>
+					<tr>
+						<th style="font-family: 'Press Start 2P', cursive;">LR</th>
+						<th style="font-family: 'Press Start 2P', cursive;">LM</th>
+						<th style="font-family: 'Press Start 2P', cursive;">LI</th>
+						<th style="font-family: 'Press Start 2P', cursive;">LT</th>
+						<th style="font-family: 'Press Start 2P', cursive;"></th>
+						<th style="font-family: 'Press Start 2P', cursive;">RT</th>
+						<th style="font-family: 'Press Start 2P', cursive;">RI</th>
+						<th style="font-family: 'Press Start 2P', cursive;">RM</th>
+						<th style="font-family: 'Press Start 2P', cursive;">RR</th>
+					</tr>
+					<tr>
+						<td>
+							<select ng-init="leftRing = '-'" ng-model='leftRing' ng-options='gridName for gridName in sampler'></select>
+						</td>
+						<td>
+							<select ng-init="leftRing = '-'" ng-model="leftMiddle" ng-options='gridName for gridName in sampler'></select>
+						</td>
+						<td>
+							<select ng-model="leftIndex" ng-options='gridName for gridName in sampler'></select>
+						</td>
+						<td>
+							<select ng-model="leftThumb" ng-options='gridName for gridName in sampler'></select>
+						</td>
+						<td></td>
+						<td>
+							<select ng-model="rightThumb" ng-options='gridName for gridName in sampler'></select>
+						</td>
+						<td>
+							<select ng-model="rightIndex" ng-options='gridName for gridName in sampler'></select>
+						</td>
+						<td>
+							<select ng-model="rightMiddle" ng-options='gridName for gridName in sampler'></select>
+						</td>
+						<td>
+							<select ng-model="rightRing" ng-options='gridName for gridName in sampler'></select>
+						</td>
+					</tr>
+					<td colspan="9">
+						<button ng-click="concatStrings()"> COMMIT
+						</button>
+					</td>
+				</table>
 
-			<table>
-				<tr>
-					<th style="font-family: 'Press Start 2P', cursive;">LR</th>
-					<th style="font-family: 'Press Start 2P', cursive;">LM</th>
-					<th style="font-family: 'Press Start 2P', cursive;">LI</th>
-					<th style="font-family: 'Press Start 2P', cursive;">LT</th>
-					<th style="font-family: 'Press Start 2P', cursive;"></th>
-					<th style="font-family: 'Press Start 2P', cursive;">RT</th>
-					<th style="font-family: 'Press Start 2P', cursive;">RI</th>
-					<th style="font-family: 'Press Start 2P', cursive;">RM</th>
-					<th style="font-family: 'Press Start 2P', cursive;">RR</th>
-				</tr>
-				<tr>
-					<td>
-						<select ng-model='leftRing'  ng-options='gridName for gridName in sampler'></select>
-					</td>
-					<td>
-						<select ng-model="leftMiddle"  ng-options='gridName for gridName in sampler'></select>
-					</td>
-					<td>
-						<select ng-model="leftIndex"  ng-options='gridName for gridName in sampler'></select>
-					</td>
-					<td>
-						<select ng-model="leftThumb"  ng-options='gridName for gridName in sampler'></select>
-					</td>
-					<td></td>
-					<td>
-						<select ng-model="rightThumb"  ng-options='gridName for gridName in sampler'></select>
-					</td>
-					<td>
-						<select ng-model="rightIndex"  ng-options='gridName for gridName in sampler'></select>
-					</td>
-					<td>
-						<select ng-model="rightMiddle"  ng-options='gridName for gridName in sampler'></select>
-					</td>
-					<td>
-						<select ng-model="rightRing"  ng-options='gridName for gridName in sampler'></select>
-					</td>
-				</tr>
-				<td colspan="9">
-					<button ng-click="concatStrings()"> COMMIT
-					</button>
-				</td>
-			</table>
+				<h2>SCALES</h2>
 
-
-
+			</div>
 		</div>
 	</div>
 
@@ -556,7 +557,6 @@
 				}
 				return tabString
 			}
-
 		});
 	</script>
 

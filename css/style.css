@@ -1,155 +1,136 @@
-
 body {
-    font-family: 'PT Mono', Monaco, monospace;
-    background-color: #3498db;
+  font-family: 'PT Mono', Monaco, monospace;
+  background-color: #3498db;
 }
-
 #navbar {
-    font-family: 'Press Start 2P', monospace;
-    line-height:30px;
-    background-color:#3498db;
-    color:#ecf0f1;
-    height:100%;
-    width:100px;
-    float:right;
-    padding:5px;
+  font-family: 'Press Start 2P', monospace;
+  line-height: 30px;
+  background-color: #3498db;
+  color: #ecf0f1;
+  height: 100%;
+  width: 100px;
+  float: right;
+  padding: 5px;
 }
-
 h1 {
-    font-family: 'Press Start 2P', monospace;
-    background-color:#2c3e50;
-    color:#ecf0f1;
-    text-align:left;
-    padding:5px;
-
+  font-family: 'Press Start 2P', monospace;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: left;
+  padding: 5px;
 }
-
 h2 {
-    font-family: 'Press Start 2P', monospace;
-    color:#2c3e50;
-    text-align:left;
-    line-height: 30%;
-
+  font-family: 'Press Start 2P', monospace;
+  color: #2c3e50;
+  text-align: left;
+  line-height: 30%;
 }
-
 footer {
-    font-family: 'PT Mono', Monaco, monospace;
-    background-color:#2c3e50;
-    color:#ecf0f1;
-    clear:both;
-    text-align:left;
-    padding:5px;
-
+  font-family: 'PT Mono', Monaco, monospace;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  clear: both;
+  text-align: left;
+  padding: 5px;
 }
-
 p {
-    font-family: 'PT Mono', Monaco, monospace;
-    line-height: 130%;
-
+  font-family: 'PT Mono', Monaco, monospace;
+  line-height: 130%;
 }
-
 code {
   font-family: 'PT Mono', Monaco, monospace;
   line-height: 100%;
-  background-color:#2c3e50;
-  color:#ecf0f1;
+  background-color: #2c3e50;
+  color: #ecf0f1;
   white-space: nowrap;
   overflow: hidden;
-
 }
-
 th {
   font-family: 'PT Mono', Monaco, monospace;
   height: 10px;
   align-items: center;
   text-align: center;
 }
-
 table {
   font-family: 'PT Mono', Monaco, monospace;
-  background-color:#3498db;
-  color:#2c3e50;
+  background-color: #3498db;
+  color: #2c3e50;
   width: 35px;
   align-items: center;
   text-align: center;
-
 }
-
 td {
   font-family: 'PT Mono', Monaco, monospace;
-  background-color:#3498db;
-  color:#ecf0f1;
+  background-color: #3498db;
+  color: #ecf0f1;
   height: 35px;
-
 }
-
 input {
   font-family: 'Press Start 2P', monospace;
-  color:#2c3e50;
-  background-color:#ecf0f1;
+  color: #2c3e50;
+  background-color: #ecf0f1;
   width: 35px;
   height: 35px;
   text-align: center;
-
 }
-
 left-align {
-  font-family:= 'PT Mono', Monaco, monospace;
-  background-color:#3498db;
+  font-family: ='PT Mono', Monaco, monospace;
+  background-color: #3498db;
   text-align: left;
-
 }
 
 /* unvisited link */
+
 a:link {
-    color: #e74c3c;
+  color: #e74c3c;
 }
 
 /* visited link */
+
 a:visited {
-    color: #2ecc71;
+  color: #2ecc71;
 }
 
 /* mouse over link */
+
 a:hover {
-    color: #9b59b6;
+  color: #9b59b6;
 }
 
 /* selected link */
-a:active {
-    color: #f1c40f;
-}
 
+a:active {
+  color: #f1c40f;
+}
 button {
   font-family: 'Press Start 2P', monospace;
   align-items: center;
-  color:#2c3e50;
-  background-color:#ecf0f1;
-  width:100%
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  width: 100%
 }
-
 button:active {
   background-color: #f1c40f;
 }
-
 select {
-  color:#2c3e50;
-  background-color:#ecf0f1;
+  color: #ecf0f1;
+  background-color: #2c3e50;
   font-family: 'Press Start 2P', monospace;
-	float:left;
-	display:inline-flex;
+  float: center;
+  display: inline-flex;
   height: 50px;
-
-  .styled-select select {
-   background: transparent;
-   width: 268px;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
-   }
-
+}
+.styled-select select {
+  font-family: 'Press Start 2P', monospace;
+  /*background: transparent;*/
+  color: #ecf0f1;
+  background-color: #2c3e50;
+  width: 50px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
 }
