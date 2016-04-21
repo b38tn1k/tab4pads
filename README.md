@@ -3,7 +3,7 @@ A tab editor for sampler pad devices in javascript cause I thought it would be n
 
 
 concept:
-http://jamescarthew.com/music/2015/07/15/Tabs-4-Pads/
+http://b38tn1k.com/music/2015/07/15/Tabs-4-Pads/
 
 abandoned proof of concept:
-http://jamescarthew.com/tab4pads/
+http://b38tn1k.com/tab4pads/
